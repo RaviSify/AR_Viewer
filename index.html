@@ -516,7 +516,7 @@
   </script>
   <script>
     function fetchImages() {
-      fetch('https://ravi-ar.netlify.app/imageList')
+      fetch('/imageList')
         .then(response => response.json())
         .then(images => {
           const gallery = document.getElementById('image-container');
