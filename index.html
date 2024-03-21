@@ -516,6 +516,7 @@
   </script>
   <script>
     function fetchImages() {
+      console.log('Hi Unity');
       fetch('/imageList')
         .then(response => response.json())
         .then(images => {
