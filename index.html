@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Multilplayer scoket</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/socketIO_playermovement_avatar-v2.json", {onProgress: UnityProgress});
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <title>Webxr Ar</title>
+    
+    <script type="module" crossorigin src="/assets/index.554d07b8.js"></script>
+    <link rel="stylesheet" href="/assets/index.0b1393fc.css">
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Multilplayer scoket</div>
+    <!-- <script type="module" src="/cube/normal-cube.js"></script> -->
+    
+    <!-- <script type="module" src="/cube/xr-hit-cube.js"></script> -->
+    <!-- <script type="module" src="/model/xr-hit-models.js"></script> -->
+    <!-- <script type="module" src="/model/xr-domOverlay.js"></script> -->
+
+    <div id="overlay-content">
+      <div id="container">
+        <label for="model-select">Choose Model</label>
+        <select id="model-select">
+          <option value="chair">Chair</option>
+          <option value="bookcase">Bookcase</option>
+        </select>
       </div>
     </div>
+    <!-- Comment style display none for dom overlay to work in style.css file -->
   </body>
 </html>
